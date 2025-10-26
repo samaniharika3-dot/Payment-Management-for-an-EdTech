@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdTech Payment Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Payment Management for EdTech</h1>
+  </header>
+
+  <main>
+    <section id="payment-form-section">
+      <h2>Add New Payment</h2>
+      <form id="payment-form">
+        <div class="form-group">
+          <label for="studentName">Student Name</label>
+          <input type="text" id="studentName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="plan">Plan</label>
+          <select id="plan" required>
+            <option value="">Select Plan</option>
+            <option value="Basic">Basic - ₹299</option>
+            <option value="Pro">Pro - ₹799</option>
+            <option value="Annual Pro">Annual Pro - ₹7999</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount (₹)</label>
+          <input type="number" id="amount" required>
+        </div>
+
+        <div class="form-group">
+          <label for="method">Payment Method</label>
+          <select id="method" required>
+            <option value="">Select Method</option>
+            <option value="Card">Card</option>
+            <option value="UPI">UPI</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+            <option value="Cash">Cash</option>
+          </select>
+        </div>
+
+        <button type="submit">Add Payment</button>
+      </form>
+    </section>
+
+    <section id="payment-list-section">
+      <h2>All Payments</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Student Name</th>
+            <th>Plan</th>
+            <th>Amount</th>
+            <th>Method</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="paymentTableBody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 EdTech Payment Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
