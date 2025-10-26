@@ -1,46 +1,46 @@
-## 🏷️ **Project Title:** Employee Background Verification Application
+
+## 🏷️ **Project Title:** Payment Management for an EdTech
 
 ### 💡 **Project Concept:**
 
-The **Employee Background Verification Application** is a web-based system that helps organizations efficiently manage and verify employee details. Employees can submit their personal, educational, employment, identity, and reference information, while administrators can review submissions and update verification statuses. The system ensures data accuracy, transparency, and faster verification processing within an organization.
-
+The **Payment Management for an EdTech** system is a web-based fullstack application designed to simplify and automate student payment processes for educational platforms. It allows administrators to manage student payments, track subscription plans, and maintain accurate financial records. The system enhances transparency, reduces manual effort, and ensures secure handling of payment data
 
 ### 🎯 **Frontend Features:**
 
-#### 👩‍💼 **User (Employee) Side:**
+#### 👩‍🎓 **User (Student) Side:**
 
-* Submit **personal, educational, employment, identity, and reference details**.
-* **View real-time verification status** — Pending, Verified, or Rejected.
-* **Form validation** ensures all required fields are properly filled.
-* **Upload ID proofs** such as Aadhaar or PAN.
-* **Refresh status** to check for updates.
-* **Logout functionality** for secure exit.
+* View and manage **subscription plans** (monthly, quarterly, yearly).
+* **Make payments** and view payment status (Pending, Successful, Failed).
+* **Responsive and user-friendly interface** for easy access.
+* **Form validation** ensures all details are entered correctly.
+* Option to **view payment history** and receipts.
+* **Logout functionality** to securely exit the system.
 
-#### 🧑‍💻 **Admin Side:**
+#### 🧑‍💼 **Admin Side:**
 
-* **Dashboard** displaying all employee submissions in a tabular format.
-* **Search and filter** by employee name, email, or verification status.
-* **View full employee details** in a modal view.
-* **Update status** to Verified or Rejected.
-* **Logout option** for secure session handling.
-* Displays **“No records found”** message when no matching entries exist.
+* **Dashboard** displaying all student payments and plan details.
+* **Search and filter** payments by student name, ID, or status.
+* **Update payment records** or mark payments as verified.
+* View **revenue reports** and track subscription trends.
+* Displays **“No records found”** if no matching transactions exist.
+* **Logout functionality** for admin security.
 
 ---
 
 ### 🚀 **Future Improvements / Backend Integration:**
 
-* Replace **localStorage** with a **database (MySQL or MongoDB)** for persistent data.
-* Add **secure login and authentication** for both users and admins.
-* Enable **email notifications** when status updates occur.
-* Build **backend APIs** to handle CRUD operations and verification workflows.
-* Ensure **secure storage for uploaded ID proofs**.
-* Add **reporting and analytics** to track verification trends and performance.
+* Integrate **Node.js and MySQL** for real-time payment storage and retrieval.
+* Implement **secure login and authentication** for students and admins.
+* Add **payment gateway integration** (e.g., Razorpay or Stripe).
+* Generate **automatic invoices and email notifications** upon successful payment.
+* Include **data analytics and reporting dashboards** for revenue insights.
+* Ensure **data encryption** and secure transaction management.
 
 ---
 
 ### 🛠️ **Technologies Used:**
 
 * **Frontend:** HTML, CSS, JavaScript
-* **Storage (Frontend version):** Browser localStorage
-* *(Backend Integration Planned: Node.js, Express, and MySQL/MongoDB)*
-
+* **Planned Backend:** Node.js, Express.js
+* **Database:** MySQL
+* *(Frontend version currently uses browser localStorage for temporary data storage.)*
